@@ -1,0 +1,27 @@
+Programul are 3 stari: citire, pornit, oprire fortata.
+
+Initial se afla in starea de citire, in care citeste input-ul de la butonul de pornire. Cat timp face acest lucru, celelalte 2 stari
+sunt dezactivate, iar led-urile pentru indicarea procentului de incarcare sunt oprite.
+
+Cand butonul de pornire este apasat, programul trece in starea de pornit si memoreaza timpul de activare. In aceasta stare, led-ul rgb
+devine rosu si vor incepe sa se aprinda led-urile albe in functie de procentul de incarcare. Procentul de incarcare este calculat pe
+baza timpului trecut de la activare si a duratei procesului de incarcare, definita ca 12 secunde. Led-ul curent (calculat ca
+[(timp curent - timp de activare)/3] + 1) va clipi. Dupa ce se aprind toate led-urile, in urmatoarele 2.5 secunde (definite ca
+"timpFinalizare"), acestea vor clipi de 3 ori, iar apoi statia va fi din nou libera (programul intra din nou in starea de citire).
+
+Clipirea led-urilor albe este executata de un subprogram care primeste ca intrare o variabila ledCurent. Cand aceasta variabila este
+mai mica decat 4, led-ul care corespunde acestei variabile + 1 va clipi. Daca valoarea este mai mare, toate led-urile vor clipi de 3
+ori, adica isi vor schimba starea de 6 ori. Pentru clipire, subprogram-ul urmareste cu cat timp in urma a fost ultima data schimbata
+stare led-ului/urilor care clipesc. Aceasta durata este definita ca "timpBlink" si este egala cu 0.3 secunde.
+
+Concomitent, programul va citi input-ul de la butonul de oprire, verificand daca acesta a fost apasat timp de o secunda. 
+Daca aceasta conditie este indeplinita, programul intra in starea de oprire fortata.
+
+Starea aceasta dureaza 2.5 secunde (definite ca "timpFinalizare"), iar in ea toate led-urile albe vor clipi de 3 ori, iar apoi statia 
+va fi din nou libera (programul intra din nou in starea de citire).
+
+Pentru citirea input-ului de la butoane este folosita o functie care primeste ca parametru un timp de apasare. In cazul butonului de
+pornire, acest timp este setat ca 0.05 secunde, si este necesar pentru a face debouncing. In cazul butonului de oprire, acest timp este
+setat la o secunda. Functia compara starea curenta a butonului cu starea sa anterioara, si daca sunt diferite, atunci se memoreaza
+momentul la care butonul si-a schimbat starea. Daca butonul si-a mentinut starea pentru o perioada de timp mai mare decat timpul de
+apasare primit ca parametru, si starea sa este de high, atunci functia va returna true.
