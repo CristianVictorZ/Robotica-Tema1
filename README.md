@@ -9,3 +9,4 @@ Componente:
     8x Rezistoare (6x 220/330ohm, 2x 1K)
     Breadboard
     Linii de legătură
+
