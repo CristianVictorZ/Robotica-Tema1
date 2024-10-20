@@ -1,21 +1,22 @@
 # Introducere in Robotica - Tema 1
 
-  Această temă simulează o stație de încărcare pentru un vehicul electric, folosind mai multe LED-uri și butoane.
+Această temă simulează o stație de încărcare pentru un vehicul electric, folosind mai multe LED-uri și butoane.
 
 ## Componente:
-  4x LED-uri (pentru a simula procentul de încărcare);
+
+4x LED-uri (pentru a simula procentul de încărcare);
   
-  1x LED RGB (pentru starea de liber sau ocupat);
+1x LED RGB (pentru starea de liber sau ocupat);
   
-  2x Butoane (pentru start încărcare și stop încărcare);
+2x Butoane (pentru start încărcare și stop încărcare);
   
-  8x Rezistoare (6x 220/330ohm, 2x 1K);
+8x Rezistoare (6x 220/330ohm, 2x 1K);
   
-  Breadboard;
+Breadboard;
   
-  Linii de legătură.
+Linii de legătură.
 
 ## Descriere:
 
-  Starea stației este ‘liberă’. Loader-ul este stins, iar led-ul pentru disponibilitate este verde. Se apasă butonul pentru start. Led-ul pentru disponibilitate se face roșu, iar încărcarea începe prin aprinderea primului LED L1. Led-ul 1 clipește timp de 3s, celelalte fiind stinse. Dupa încărcarea primului procent de 25% led-ul rămâne aprins și se trece la următorul led, care va începe să clipească. La finalizarea încărcării toate led-urile vor clipi simultan de 3 ori, iar apoi se vor stinge, pentru a semnaliza finalizarea procesului. Led-ul pentru disponibilitate se face verde. Dacă oricând de la pornirea încărcării până la finalizarea acesteia este apăsat lung (min 1s) butonul de stop, încărcarea se întrerupe prin animația de final (toate led-urile clipesc de 3 ori), iar led-ul pentru disponibilitate devine verde. 
+Starea stației este ‘liberă’. Loader-ul este stins, iar led-ul pentru disponibilitate este verde. Se apasă butonul pentru start. Led-ul pentru disponibilitate se face roșu, iar încărcarea începe prin aprinderea primului LED L1. Led-ul 1 clipește timp de 3s, celelalte fiind stinse. Dupa încărcarea primului procent de 25% led-ul rămâne aprins și se trece la următorul led, care va începe să clipească. La finalizarea încărcării toate led-urile vor clipi simultan de 3 ori, iar apoi se vor stinge, pentru a semnaliza finalizarea procesului. Led-ul pentru disponibilitate se face verde. Dacă oricând de la pornirea încărcării până la finalizarea acesteia este apăsat lung (min 1s) butonul de stop, încărcarea se întrerupe prin animația de final (toate led-urile clipesc de 3 ori), iar led-ul pentru disponibilitate devine verde. 
 
