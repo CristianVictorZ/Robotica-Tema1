@@ -2,7 +2,7 @@
 
 Această temă simulează o stație de încărcare pentru un vehicul electric, folosind mai multe LED-uri și butoane.
 
-Componente:
+# Componente:
     4x LED-uri (pentru a simula procentul de încărcare);
     1x LED RGB (pentru starea de liber sau ocupat);
     2x Butoane (pentru start încărcare și stop încărcare);
