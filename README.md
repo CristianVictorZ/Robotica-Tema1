@@ -10,3 +10,5 @@ Această temă simulează o stație de încărcare pentru un vehicul electric, f
     Breadboard;
     Linii de legătură.
 
+## Descriere
+
