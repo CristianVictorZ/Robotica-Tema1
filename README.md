@@ -1,4 +1,4 @@
-# Robotica-tema1
+# Introducere in Robotica - Tema 1
 
 Această temă simulează o stație de încărcare pentru un vehicul electric, folosind mai multe LED-uri și butoane.
 
