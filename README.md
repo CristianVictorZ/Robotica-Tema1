@@ -28,5 +28,7 @@ Starea stației este ‘liberă’. Loader-ul este stins, iar led-ul pentru disp
 
 ![IMG_20241020_174643](https://github.com/user-attachments/assets/7fd517db-ce67-4c57-8983-0457880e05ee)
 
+## Video:
+
 [<img src="https://img.youtube.com/vi/VCjNsLooLII/maxresdefault.jpg">](https://youtu.be/VCjNsLooLII)
 
